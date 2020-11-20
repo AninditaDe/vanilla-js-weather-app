@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div class="main" id="main">
+            <div class="search-box">
+                <input id="search-bar" type="text" placeholder="Search..." class="search-bar"
+                    onkeypress="BuildURL(event)" />
+
+            </div>
+            <div id="errorMessage" class="error"></div>
+            <div class="weather-wrap">
+                <div class="location-box">
+                    <div id="location" class="location"></div>
+                    <div id="date" class="date"></div>
+                </div>
+                <div class="weather-box">
+                    <div id="temp" class="temp"></div>
+                    <div id="weather" class="weather"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./api.js"></script>
+    <script src="./ui.js"></script>
+</body>
+
+</html>
